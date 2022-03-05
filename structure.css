@@ -1,0 +1,60 @@
+/*color scheme
+#9dffb0  #7dcc8c
+#81f1f7  #67c0c5
+#fffbec  #e5e1d4
+#c48d3f  #9c7032
+#fff563  #ccc44f
+*/
+/*header*/
+.header {
+    background-color:#7dcc8c;
+    width: 100%;
+    height: 40px;
+}
+.head-logo {
+    margin-left: 10px;
+}
+.head-nav {
+    float: right;
+    display: inline-block;
+    padding-top: 5px;
+}
+.header a {
+    text-decoration: none;
+    font-size: 20px; 
+    color: white;
+    padding: 12px;
+}
+.header a:hover {
+    background-color: #81f1f7;
+}
+.header a.active{
+    background-color: #67c0c5;
+}
+/*footer*/
+.footer {
+    background-color: #7dcc8c;
+    width: 100%;
+}
+.foot-credit {
+    color: white;
+    display: inline-block;
+    margin-left: 45%;
+}
+.foot-nav {
+    float: right;
+    padding-top: 10px;
+    margin-right: 10px;
+}
+/*title*/
+.title {
+    font-size: 36px;
+    font-style: bold;
+    color: white;
+    background-color: #c48d3f;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    text-align: center;
+    margin-left: 45%;
+}
