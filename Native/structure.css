@@ -54,7 +54,18 @@
     background-color: #c48d3f;
     border-radius: 10px;
     display: inline-block;
+    block-size: fit-content;
+    width: fit-content;
+    height: fit-content;
     padding: 0.5em 0.5em 0.5em 0.5em;
     text-align: center;
     margin-left: 45%;
+}
+/*container*/
+.container{
+    padding-left: 10%;
+    padding-right: 15%;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3,1fr);
 }

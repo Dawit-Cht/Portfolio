@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>DawitCht-Portfolio</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="project.css">
         <link rel="stylesheet" href="structure.css">
         <link rel="stylesheet" href="normalize.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,9 +11,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
         <script src="scripts/main.js"></script>
     </head>
-    <header class="header">
-        <div class="container">
-            <img class="profile-logo" alt="profile" src="images/me_flip.png" width="70" height="70"/>
+    <header>
+        <div class="header">
+            <img class="head-logo" alt="profile" src="images/me_flip.png" width="40" height="40"/>
             <nav class="head-nav">
                 <a href="index.html">Home</a>
                 <a class="active" href="project.html">Projects</a>
@@ -22,37 +22,54 @@
         </div>
     </header>
     <body>
-        <p>
-            <h1>Project List</h1>
-            <div class="project">
-                <h2><a class="navigator" href="/projects/portfolio.html">Portfolio</a></h2>
-                <p>
-                    Project's Detail
-                    with Images
-                </p>
-            </div>
-            <div class="project"> 
-                <h2><a class="navigator" href="/projects/simpleLogin.html">Test&Learn</a></h2>
-                <p>
-                    ToDOList
-                    simpleLogin
-                    with Images
-                </p>
-            </div>
-            <div class="project">
-                <h2><a class="navigator" href="/projects/dashboard.html">DevSecOps' Dashboard</a></h2>
-                <p>
-                    Project's Detail
-                    with Images
-                </p>
-            </div>
-        </p>
+        <div class="container highlights">
+            <p>
+                <div class="title">Projects List</div>
+                <div class="project" onclick="showDetailed()">
+                    <img class="project-img" alt="project1" src="images/dashboard.png" width="200" height="200"/>
+                    <h2><a href="/projects/portfolio.html">Portfolio</a></h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum maximus sem, eu imperdiet mi imperdiet vel. Praesent sodales auctor ornare. Pellentesque rutrum vestibulum luctus. Proin eu condimentum sapien, vel egestas ipsum. Curabitur et vestibulum dui. Nullam ac aliquam elit. Nulla turpis lorem, mollis et lorem at, rutrum ultrices felis. Cras sollicitudin tincidunt sodales. In imperdiet facilisis finibus. Mauris ullamcorper enim eu consequat scelerisque. Pellentesque quam elit, iaculis at diam in, vestibulum commodo nibh. Proin ornare dapibus consectetur. Integer non pretium velit. Sed malesuada, mauris a euismod molestie, lectus felis iaculis massa, eu congue ligula nisi sit amet metus.
+                    </p>
+                </div>
+                <div class="project"> 
+                    <img class="project-img" alt="project2" src="images/dashboard.png" width="200" height="200"/>
+                    <h2><a href="/projects/simpleLogin.html">simpleLogin</a></h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum maximus sem, eu imperdiet mi imperdiet vel. Praesent sodales auctor ornare. Pellentesque rutrum vestibulum luctus. Proin eu condimentum sapien, vel egestas ipsum. Curabitur et vestibulum dui. Nullam ac aliquam elit. Nulla turpis lorem, mollis et lorem at, rutrum ultrices felis. Cras sollicitudin tincidunt sodales. In imperdiet facilisis finibus. Mauris ullamcorper enim eu consequat scelerisque. Pellentesque quam elit, iaculis at diam in, vestibulum commodo nibh. Proin ornare dapibus consectetur. Integer non pretium velit. Sed malesuada, mauris a euismod molestie, lectus felis iaculis massa, eu congue ligula nisi sit amet metus.
+                    </p>
+                </div>
+                <div class="project">
+                    <img class="project-img" alt="project3" src="images/dashboard.png" width="200" height="200"/>
+                    <h2><a href="/projects/dashboard.html">DevSecOps' Dashboard</a></h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum maximus sem, eu imperdiet mi imperdiet vel. Praesent sodales auctor ornare. Pellentesque rutrum vestibulum luctus. Proin eu condimentum sapien, vel egestas ipsum. Curabitur et vestibulum dui. Nullam ac aliquam elit. Nulla turpis lorem, mollis et lorem at, rutrum ultrices felis. Cras sollicitudin tincidunt sodales. In imperdiet facilisis finibus. Mauris ullamcorper enim eu consequat scelerisque. Pellentesque quam elit, iaculis at diam in, vestibulum commodo nibh. Proin ornare dapibus consectetur. Integer non pretium velit. Sed malesuada, mauris a euismod molestie, lectus felis iaculis massa, eu congue ligula nisi sit amet metus.
+                    </p>
+                </div>
+                <div class="project">
+                    <img class="project-img" alt="project4" src="images/dashboard.png" width="200" height="200"/>
+                    <h2><a href="/projects/dashboard.html">ToDo List</a></h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum maximus sem, eu imperdiet mi imperdiet vel. Praesent sodales auctor ornare. Pellentesque rutrum vestibulum luctus. Proin eu condimentum sapien, vel egestas ipsum. Curabitur et vestibulum dui. Nullam ac aliquam elit. Nulla turpis lorem, mollis et lorem at, rutrum ultrices felis. Cras sollicitudin tincidunt sodales. In imperdiet facilisis finibus. Mauris ullamcorper enim eu consequat scelerisque. Pellentesque quam elit, iaculis at diam in, vestibulum commodo nibh. Proin ornare dapibus consectetur. Integer non pretium velit. Sed malesuada, mauris a euismod molestie, lectus felis iaculis massa, eu congue ligula nisi sit amet metus.
+                    </p>
+                </div>
+                <div class="project">
+                    <img class="project-img" alt="project5" src="images/dashboard.png" width="200" height="200"/>
+                    <h2><a href="/projects/dashboard.html">Lorem ipsum dolor sit amet</a></h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum maximus sem, eu imperdiet mi imperdiet vel. Praesent sodales auctor ornare. Pellentesque rutrum vestibulum luctus. Proin eu condimentum sapien, vel egestas ipsum. Curabitur et vestibulum dui. Nullam ac aliquam elit. Nulla turpis lorem, mollis et lorem at, rutrum ultrices felis. Cras sollicitudin tincidunt sodales. In imperdiet facilisis finibus. Mauris ullamcorper enim eu consequat scelerisque. Pellentesque quam elit, iaculis at diam in, vestibulum commodo nibh. Proin ornare dapibus consectetur. Integer non pretium velit. Sed malesuada, mauris a euismod molestie, lectus felis iaculis massa, eu congue ligula nisi sit amet metus.
+                    </p>
+                </div>
+            </p>
+        </div>
     </body>
     <footer>
         <div class="footer">
-            <h3 class="page-credit">Dawit Cht</h3>
-            <a class="link" href="https://www.linkedin.com/in/dawit-chu/"><img class="logo" alt="linkedin" src="images/linkedin.png" width="50" height="50"></a>
-            <a class="link" href="https://github.com/Dawit-Cht"><img class="logo" alt="gothub" src="images/github.png" width="50" height="50"></a>
+            <h3 class="foot-credit">Dawit Cht</h3>
+            <nav class="foot-nav">
+                <a class="link" href="https://www.linkedin.com/in/dawit-chu/"><img class="logo" alt="linkedin" src="images/linkedin.png" width="40" height="40"></a>
+                <a class="link" href="https://github.com/Dawit-Cht"><img class="logo" alt="gothub" src="images/github.png" width="40" height="40"></a>
+            </nav>
         </div>
     </footer>
 </html>
