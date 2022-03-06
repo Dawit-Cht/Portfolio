@@ -1,0 +1,41 @@
+/*color scheme
+#9dffb0  #7dcc8c
+#81f1f7  #67c0c5
+#fffbec  #e5e1d4
+#c48d3f  #9c7032
+#fff563  #ccc44f
+*/
+/*greeting*/
+.greeting {
+}
+.greeting-img {
+    float: left;
+}
+.greeting-text {
+    display: inline-block;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+    background-color: #67c0c5;
+    border-radius: 10px;
+    padding: 5px 20px 15px 20px;
+    margin-top: 10%;
+    block-size: fit-content;
+    width: fit-content;
+    height: fit-content;
+    grid-column: span 2;
+}
+/*highlights*/
+.highlights {
+
+}
+.project-img{
+    float: left;
+    padding-right: 30px;
+}
+.highlight {
+    padding: 20px 10px 20px 10px;
+    text-align: justify;
+    grid-column: span 3;
+}
+
