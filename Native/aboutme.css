@@ -1,0 +1,52 @@
+/*color scheme
+#9dffb0  #7dcc8c
+#81f1f7  #67c0c5
+#fffbec  #e5e1d4
+#c48d3f  #9c7032
+#fff563  #ccc44f
+*/
+.title {
+    grid-column-start: 2;
+}
+/*introduction*/
+.intro {
+    grid-column-start: 1;
+    grid-column: span 2;
+    color: white;
+    background-color: #67c0c5;
+    border-radius: 10px;
+    padding: 5px 20px 15px 20px;
+    margin-top: 10%;
+    block-size: fit-content;
+    width: fit-content;
+    height: fit-content;
+}
+.intro-img {
+    grid-column-start: 3;
+}
+/*archievement*/
+.badge {
+    grid-row-start: 2;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cert {
+    margin-bottom: 50px;
+}
+/*button*/
+.dwn-btn:active {
+    background-color:#9c7032;
+}
+.dwn-btn {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    color: white;
+    background-color: #c48d3f;
+    border-width: 0;
+    border-radius: 10px;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}

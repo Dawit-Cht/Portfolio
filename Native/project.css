@@ -6,6 +6,7 @@
 #fff563  #ccc44f
 */
 /*projects*/
+
 .project-img{
     float: left;
     padding-right: 30px;
@@ -13,4 +14,5 @@
 .project {
     padding: 20px 10px 20px 10px;
     text-align: justify;
+    grid-column: span 3;
 }
