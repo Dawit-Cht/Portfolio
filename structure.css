@@ -71,3 +71,11 @@
     gap: 1.5rem;
     grid-template-columns: repeat(3,1fr);
 }
+/*tab*/
+.tab {
+    padding-left: 5%;
+}
+/*reference*/
+.ref {
+    text-decoration: none;
+}

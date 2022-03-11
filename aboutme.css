@@ -25,10 +25,15 @@
     grid-column-start: 3;
 }
 /*archievement*/
-.badge {
+.badges {
     grid-row-start: 2;
+    grid-column: span 3;
     margin-left: auto;
     margin-right: auto;
+}
+.badges img {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .cert {
     margin-bottom: 50px;
@@ -37,7 +42,13 @@
 .dwn-btn:active {
     background-color:#9c7032;
 }
+.resume {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
 .dwn-btn {
+    grid-row-start: 3;
+    grid-column-start: 2;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -49,4 +60,5 @@
     border-width: 0;
     border-radius: 10px;
     padding: 0.5em 0.5em 0.5em 0.5em;
+    text-decoration: none;
 }
