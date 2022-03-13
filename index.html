@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>DawitCht-Portfolio</title>
-        <link rel="stylesheet" href="index.css ">
-        <link rel="stylesheet" href="structure.css">
-        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="styles/index.css ">
+        <link rel="stylesheet" href="styles/structure.css">
+        <link rel="stylesheet" href="styles/normalize.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-        <script src="scripts/main.js"></script>
+        <script defer src="scripts/main.js"></script>
     </head>
     <header>
         <div class="header">
@@ -32,29 +32,40 @@
         <div class="container highlights">
             <p>
                 <div class="title">Highlights</div>
-                <div class="first highlight" onclick="showDetailed()">
-                    <img class="project-img" alt="project1" src="images/dashboard.png" width="200" height="200"/>
-                    <h2>Portfolio</h2>
+                <div class="highlight popup" onclick="openPopup('portfolio','overlay')">
+                    <img class="project-img" alt="project1" src="images/me.jpg" width="200" height="200"/>
+                    <h2 class="pj-name">Portfolio</h2>
                     <p>
                         <span class="tab"></span>This is my first project that I start from scratch. It may not be the begin of my career path in this field, but it is one of my pround to present project. This project will be my portfolio to show my experience with the skill that I used for developing this portfolio. It was developed by using HTML, CSS and JavaScript without any framework to help me understand web application from the basic before start using framework.
                     </p>
                 </div>
+                <div class="popup-data" id="portfolio">
+                    <div class="title">Portfolio</div>
+                    <button class="close-button" onclick="closePopup('portfolio')">&times;</button>
+                    <div class="popup-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar tempor velit eu molestie. Morbi rutrum finibus molestie. Nulla pellentesque malesuada viverra. Nullam gravida neque quam, ut facilisis quam euismod non. Duis tempus nulla vel risus malesuada, non malesuada justo blandit. Donec ut accumsan dolor, id posuere enim. Etiam eleifend mollis maximus. Pellentesque elit risus, viverra id ultricies vel, bibendum at purus. Ut ante ex, vestibulum sed finibus ut, sagittis eget ligula. Praesent sit amet pharetra justo. Sed ac semper arcu. Mauris dignissim ut erat sed porta. Nunc sollicitudin iaculis erat, ut eleifend libero semper at.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar tempor velit eu molestie. Morbi rutrum finibus molestie. Nulla pellentesque malesuada viverra. Nullam gravida neque quam, ut facilisis quam euismod non. Duis tempus nulla vel risus malesuada, non malesuada justo blandit. Donec ut accumsan dolor, id posuere enim. Etiam eleifend mollis maximus. Pellentesque elit risus, viverra id ultricies vel, bibendum at purus. Ut ante ex, vestibulum sed finibus ut, sagittis eget ligula. Praesent sit amet pharetra justo. Sed ac semper arcu. Mauris dignissim ut erat sed porta. Nunc sollicitudin iaculis erat, ut eleifend libero semper at.
+                        <br>
+                        <img src="images/me.png" height="200px" width="200px">
+                    </div>
+                </div>
                 <div class="highlight"> 
-                    <img class="project-img" alt="project2" src="images/dashboard.png" width="200" height="200"/>
-                    <h2>simpleLogin</h2>
+                    <img class="project-img" alt="project2" src="images/projects/simpleLogin1.png" width="200" height="200"/>
+
+                    <h2 class="pj-name">simpleLogin</h2>
                     <p>
                         <span class="tab"></span>This project is a web application for testing security tools. I used React Framework for frontend, NodeJs for backend and PostgresSQL as a databased. Based on the requirement for this web applciation, I found some useful guide from Youtube chanel called "<a class="ref" href="https://www.youtube.com/watch?v=7UQBMb8ZpuE">The Stoic Programmers</a>". I didn't clone git and use it right away, but I start from create React application then follow guidde step by step. There are multiple bugs since I didn't follow the guide perfectly. Somehow I made it in the end.
                     </p>
                 </div>
                 <div class="highlight">
-                    <img class="project-img" alt="project3" src="images/dashboard.png" width="200" height="200"/>
-                    <h2>DevSecOps' Dashboard</h2>
+                    <img class="project-img" alt="project3" src="images/projects/dashboard1.png" width="200" height="200"/>
+                    <h2 class="pj-name">DevSecOps' Dashboard</h2>
                     <p>
                         <span class="tab"></span>This is my work as a DevSecOps Engineer. It is not related to web application, but I would like to put in my portfolio because This is all my work as a DevSecOps Engineer. I spent most of my time to develop, design, and improve the dashboard to delivery some analyzed information to the users. The dashboard was designed as a template, so it was used in multiple projects. Although it varies since it may be created by different applciation, it still based on sames template.
                     </p>
                 </div>
             </p>
-        </div>       
+        </div> 
+        <div id="overlay"></div>        
     </body>
     <footer>
         <div class="footer">

@@ -39,7 +39,7 @@
 .foot-credit {
     color: white;
     display: inline-block;
-    margin-left: 45%;
+    margin-left: 47%;
 }
 .foot-nav {
     float: right;
@@ -63,6 +63,10 @@
     margin-right: auto;
     margin-top: 5%;
 }
+/*Project Name*/
+.pj-name {
+    color:#9c7032;
+}
 /*container*/
 .container{
     padding-left: 10%;
@@ -71,6 +75,54 @@
     gap: 1.5rem;
     grid-template-columns: repeat(3,1fr);
 }
+/*popup*/
+.popup-data{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: #e5e1d4;
+    width: 70%;
+    max-width: 80%;
+}
+.popup-data.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup-data .title{
+    margin-left: 44%;
+    margin-bottom: 20px;
+}
+.close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    float:right;
+}
+.popup-body {
+    margin: 15px;
+}
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
 /*tab*/
 .tab {
     padding-left: 5%;
