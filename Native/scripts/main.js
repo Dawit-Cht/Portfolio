@@ -10,6 +10,19 @@ Redux, Redux-saga, Redux-thunk (State management)
 MUI/Boostrap (Component library)
 Emotion/Tailwind (CSS Framework)
 */ 
-function showDetailed(){
-    alert("It was clicked")
+text = 'overlay'
+const overlay = document.getElementById("overlay")
+console.log(overlay)
+
+function openPopup(id){
+    var popup = document.getElementById(id);
+    popup.classList.add('active')
+    overlay.classList.add('active')
 }
+
+function closePopup(id){
+    var popup = document.getElementById(id);
+    popup.classList.remove('active')
+    overlay.classList.remove('active')
+}
+
