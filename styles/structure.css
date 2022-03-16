@@ -93,7 +93,8 @@
     transform: translate(-50%, -50%) scale(1);
 }
 .popup-data .title{
-    margin-left: 44%;
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
 }
 .close-button {
@@ -107,6 +108,18 @@
 }
 .popup-body {
     margin: 15px;
+    text-align: justify;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.popup-img {
+   display: flex;
+   gap: 1.5rem;
+   justify-content: center;
+   margin-top: 20px;
+}
+.popup-img img{
+    margin: 20px;
 }
 #overlay {
     position: fixed;
@@ -119,10 +132,10 @@
     background-color: rgba(0, 0, 0, .5);
     pointer-events: none;
   }
-  #overlay.active {
-    opacity: 1;
-    pointer-events: all;
-  }
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
 /*tab*/
 .tab {
     padding-left: 5%;
