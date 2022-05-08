@@ -1,0 +1,16 @@
+/*footer*/
+.footer {
+    background-color: #7dcc8c;
+    width: 100%;
+}
+.foot-credit {
+    padding-left: 100px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+}
+.foot-nav {
+    float: right;
+    padding-top: 10px;
+    margin-right: 10px;
+}

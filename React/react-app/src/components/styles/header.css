@@ -1,0 +1,34 @@
+/*color scheme
+#9dffb0  #7dcc8c
+#81f1f7  #67c0c5
+#fffbec  #e5e1d4
+#c48d3f  #9c7032
+#fff563  #ccc44f
+*/
+/*header*/
+.header {
+    background-color:#7dcc8c;
+    width: 100%;
+    height: 45px;
+}
+.head-logo {
+    float: left;
+    margin-left: 10px;
+}
+.head-nav {
+    float: right;
+    display: inline-block;
+    padding-top: 5px;
+}
+.header a {
+    text-decoration: none;
+    font-size: 20px; 
+    color: white;
+    padding: 12px;
+}
+.header a:hover {
+    background-color: #81f1f7;
+}
+.header a.active{
+    background-color: #67c0c5;
+}
